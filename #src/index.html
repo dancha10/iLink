@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>iLink</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html', {})
+
+        <section id="profile" class="profile">
+            <div class="profile__container _container">
+                <div class="profile__main main-profile">
+                    <div class="main-profile__avatar">
+                        <img src="img/avatar.jpg" alt="" />
+                    </div>
+                    <div class="main-profile__body body-people">
+                        <div class="body-people__data">
+                            <h1 class="body-people__name _title">Jane Doe</h1>
+                            <div class="body-people__info">
+                                <ul class="body-people__information">
+                                    <li class="body-people__section">Date of birth<span>21.04.2001</span></li>
+                                    <li class="body-people__section">Gender<span>Female</span></li>
+                                    <li class="body-people__section">Country<span>Corea</span></li>
+                                </ul>
+
+                                <h3 class="body-people__title _title">About me</h3>
+                                <p class="body-people__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p class="body-people__text">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form" class="callback">
+            <div class="callback__cube _small"></div>
+            <div class="callback__cube _middle"></div>
+            <div class="callback__cube _big"></div>
+
+            <div class="callback__adapt-Cude _adapt-1"></div>
+            <div class="callback__adapt-Cude _adapt-2"></div>
+            <div class="callback__adapt-Cude _adapt-3"></div>
+
+            <div class="callback__container _container">
+                <div class="callback__main main-callback">
+                    <h2 class="main-callback__title _title">Tell us about yourself</h2>
+                    <form action="#" method="POST" class="main-callback__form form-callback" id="form">
+                        <div class="form-callback__box _visible" id="part-1">
+                            <div class="form-callback__column">
+                                <label for="">Your name</label>
+                                <input type="text" id="name" placeholder="Tell us your name" class="_req">
+
+                            </div>
+                            <div class="form-callback__column">
+                                <label for="">Your gender</label>
+                                <select name="sex" id="sex" class="_req">
+                                    <option value="-" disabled selected hidden>Chose your gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-callback__box" id="part-2">
+                            <div class="form-callback__column">
+                                <label for="">Your country</label>
+                                <input type="text" id="country" placeholder="Where are you from?" class="_req">
+                            </div>
+                            <div class="form-callback__column">
+                                <label for="">Your City</label>
+                                <input type="text" id="city" placeholder="Your native city" class="_req">
+                            </div>
+                            <div class="form-callback__column">
+                                <label for="">Your date of birth</label>
+                                <input type="date" placeholder="dd.mm.yyyy"
+                                    class="form-callback__numberInput _req _date" id="date" required>
+                            </div>
+                        </div>
+                        <div class="image-callback" id="part-3">
+                            <div class="image-callback__body">
+                                <span class="image-callback__message">Proof your identity with some documents</span>
+                                <div class="image-callback__main">
+                                    <input type="file" name="photo" id="photo_upload">
+                                    <label for="photo_upload">Add document</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preview-image" id="part-4">
+                            <div class="preview-image__main">
+                                <div class="preview-image__body">
+                                    <div class="preview-image__img">
+                                        <img src="./img/bruh.png" alt="" id="preview" />
+                                    </div>
+                                    <div class="preview-image__information">
+                                        <input type="text" value="File_name" readonly="readonly" id="read-name">
+                                        <input type="text" value="Information" readonly="readonly" id="format">
+                                    </div>
+                                </div>
+                                <div class="preview-image__trash">
+                                    <img src="img/trash.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__callback submit-area">
+                            <button type="submit" class="submit-area__btn" disabled>Send info</button>
+                            <div class="submit-area__complete" id="submit-active"><span>Completed</span></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="slider" class="slider">
+            <div class="slider__container">
+                <div class="slider__row">
+                    <div class="slider__slide">
+                        <div class="slider__content">
+                            <h2>Bruh this photo</h2>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur</p>
+                        </div>
+                        <img src="./img/slider/slider-3.jpg" alt="slide-3" class="slider__image">
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__content">
+                            <h2>Slide this photo</h2>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur</p>
+                        </div>
+                        <img src="./img/slider/slider-1.jpg" alt="slide-2" class="slider__image">
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__content">
+                            <h2>Slide this photo</h2>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur</p>
+                        </div>
+                        <img src="./img/slider/slider-2.jpg" alt="slide-1" class="slider__image">
+                    </div>
+                </div>
+
+                <div class="slider__button prev"><img src="./img/arrow-slider.svg" alt=""></div>
+                <div class="slider__button next"><img src="./img/arrow-slider.svg" alt=""></div>
+
+                <div class="slider__dots">
+                    <div class="slider__dot _active"></div>
+                    <div class="slider__dot"></div>
+                    <div class="slider__dot"></div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

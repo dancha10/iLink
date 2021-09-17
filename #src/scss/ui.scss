@@ -1,0 +1,103 @@
+._container {
+    max-width: $maxWidthContainer + 30px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+._ibg {
+    position: relative;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+._title {
+    font-weight: 800;
+    color: #303030;
+}
+
+._small {
+    @include adaptiv-value("width", 167.79, 100, 1);
+    @include adaptiv-value("height", 167.79, 100, 1);
+    border-radius: 32px;
+    transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0);
+    top: 11%;
+    left: -1.5%;
+}
+
+._middle {
+    @include adaptiv-value("width", 116.44, 60, 1);
+    @include adaptiv-value("height", 116.44, 60, 1);
+    border-radius: 16px;
+    transform: matrix(-0.67, 0.74, 0.74, 0.67, 0, 0);
+    top: 30%;
+    left: 13%;
+    z-index: 0;
+}
+
+._big {
+    width: 293.5px;
+    height: 293.5px;
+    @include adaptiv-value("width", 293.5, 220, 1);
+    @include adaptiv-value("height", 293.5, 220, 1);
+    border-radius: 32px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+    left: -3%;
+    bottom: 10%;
+}
+
+._adapt-1 {
+    @include adaptiv-value("width", 167.79, 30, 1);
+    @include adaptiv-value("height", 167.79, 30, 1);
+    background: #8e43ed;
+    border-radius: 32px;
+    transform: rotate(15deg);
+    top: 10%;
+    right: -2%;
+    @media (max-width: $md4) {
+        border-radius: 10px;
+        transform: matrix(-0.79, 0.62, 0.62, 0.79, 0, 0);
+        width: 32.28px;
+        height: 32.28px;
+        border-radius: 10px;
+        top: 8%;
+        right: 22%;
+    }
+}
+._adapt-2 {
+    @include adaptiv-value("width", 116.44, 30, 1);
+    @include adaptiv-value("height", 116.44, 30, 1);
+    @include adaptiv-value("opacity", 1, 0, 1);
+    background: #e0cff8;
+    border-radius: 16px;
+    transform: rotate(47.56deg);
+    top: 26%;
+    right: 12%;
+    @media (max-width: $md4) {
+        opacity: 0;
+    }
+}
+._adapt-3 {
+    @include adaptiv-value("width", 293.5, 50, 1);
+    @include adaptiv-value("height", 293.5, 50, 1);
+    background: #f18bc3;
+    border-radius: 32px;
+    transform: rotate(30deg);
+    bottom: 15%;
+    right: -3%;
+    @media (max-width: $md4) {
+        width: 56.46px;
+        height: 56.46px;
+        border-radius: 16px;
+        transform: matrix(-0.14, -0.99, -0.99, 0.14, 0, 0);
+        top: 4%;
+        right: 7%;
+    }
+}
+._active {
+    border: 1px solid #8E43ED;
+}
